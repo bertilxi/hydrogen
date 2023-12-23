@@ -4,17 +4,16 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "lint": "eslint . --ext ts,tsx,json",
+    "lint": "eslint . --ext ts,tsx",
     "format": "prettier --write ."
   },
   "keywords": [],
   "author": "Fernando Berti <me@berti.sh>",
   "license": "MIT",
   "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "@types/node": "^20.10.5",
     "@types/ws": "^8.5.10",
-    "ws": "^8.15.1",
-    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
     "eslint": "^8.55.0",
@@ -23,6 +22,7 @@
     "eslint-plugin-sonarjs": "^0.23.0",
     "eslint-plugin-unicorn": "^49.0.0",
     "prettier": "^3.1.0",
-    "prettier-plugin-tailwindcss": "^0.5.7"
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "ws": "^8.15.1"
   }
 }
