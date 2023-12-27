@@ -22,11 +22,7 @@ module.exports = {
   ignorePatterns: [".eslintrc.js", ".eslintrc.cjs", "eslint.cjs", "migrations"],
   rules: {
     // import
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      { ts: "ignorePackages", js: "never" },
-    ],
+    "import/extensions": ["error", "always", { ignorePackages: true }],
 
     // sonar
     "sonarjs/no-duplicate-string": "off",
